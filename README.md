@@ -62,8 +62,10 @@ Adding extra op-codes or fancy addressing is left for individual variants.
 
 ```bash
 # default names
-python assemble.py                 # input.as  →  output.mc
+python3 assemble.py                 # input.as  →  output.mc
+python3 simulate.py                 # output.mc ->  result.txt
 
 # custom names / folders
-python assemble.py  myprog.as       #   →  myprog.mc
-python assemble.py  src/foo.as  bin/foo.mc
+python3 assemble.py  myprog.as       #   →  myprog.mc
+python3 assemble.py  src/foo.as  bin/foo.mc
+python3 simulate.py  bin/foo.mc
